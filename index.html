@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurt Cyril Padernilla | App Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Floating Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo" id="logo">Kurt<span class="accent-dot"></span></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-overlay" id="mobileOverlay">
+            <ul class="nav-links-mobile">
+                <li style="--i:0"><a href="#home">Home</a></li>
+                <li style="--i:1"><a href="#about">About</a></li>
+                <li style="--i:2"><a href="#experience">Experience</a></li>
+                <li style="--i:3"><a href="#projects">Projects</a></li>
+                <li style="--i:4"><a href="#skills">Skills</a></li>
+                <li style="--i:5"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Asymmetric Split) -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for Projects
+                    </div>
+                    <h1 class="hero-title">Crafting <span class="highlight">exceptional</span> digital products.</h1>
+                    <p class="hero-description">Hi, I'm Kurt Cyril Padernilla, a full stack app developer building
+                        high-performance mobile and web solutions with elegant designs.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore Selected Work
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Get in Touch
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="code-preview-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control-dot close"></span>
+                                <span class="control-dot minimize"></span>
+                                <span class="control-dot maximize"></span>
+                            </div>
+                            <div class="window-title">kurt_padernilla.js</div>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">'Kurt Cyril'</span>,
+  role: <span class="code-string">'Full Stack App Developer'</span>,
+  technologies: {
+    mobile: [<span class="code-string">'React Native'</span>, <span class="code-string">'Flutter'</span>],
+    web: [<span class="code-string">'React'</span>, <span class="code-string">'Vue'</span>, <span class="code-string">'Node.js'</span>]
+  },
+  philosophy: <span class="code-string">'Performant code meets premium design.'</span>
+};
+
+<span class="code-comment">// Ready to collaborate?</span>
+<span class="code-keyword">if</span> (developer.readyForLaunch) {
+  developer.connect();
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Bento Grid) -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-bento-grid">
+                    <!-- Bento Cell 1: Bio Story -->
+                    <div class="bento-card bento-card-bio">
+                        <h3>My Journey</h3>
+                        <p>I am a passionate app developer with over 5 years of experience creating innovative mobile
+                            and web applications. Specializing in cross-platform systems like React Native and Flutter,
+                            I engineer solutions that resolve real-world user challenges.</p>
+                        <p>My work sits at the intersection of robust backend services and pixel-perfect frontends,
+                            ensuring high visual quality without compromising execution speeds.</p>
+                    </div>
+
+                    <!-- Bento Cell 2: Quick Metrics -->
+                    <div class="bento-card bento-card-stats">
+                        <div class="bento-stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Apps Completed</span>
+                        </div>
+                        <div class="bento-stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years of Craft</span>
+                        </div>
+                        <div class="bento-stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Users Engaged</span>
+                        </div>
+                    </div>
+
+                    <!-- Bento Cell 3: Tech Focus -->
+                    <div class="bento-card bento-card-focus">
+                        <h3>Core Philosophy</h3>
+                        <p>Writing highly accessible, scalable, clean-architectured code. I focus on reducing layout
+                            friction and optimizing render speeds.</p>
+                        <div class="focus-radar">
+                            <span class="radar-tag">Clean Architecture</span>
+                            <span class="radar-tag">User First</span>
+                            <span class="radar-tag">Offline Support</span>
+                        </div>
+                    </div>
+
+                    <!-- Bento Cell 4: Current Focus -->
+                    <div class="bento-card bento-card-active">
+                        <div class="active-badge">
+                            <span class="pulse-ring"></span>
+                            Active
+                        </div>
+                        <h3>Currently Building</h3>
+                        <p>Architecting an offline-first mobile personal finance assistant, pushing React Native
+                            framework capabilities to the edge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Timeline</span>
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">2023 — Present</span>
+                            <h3>Lead Mobile Engineer</h3>
+                            <span class="timeline-company">NexusTech Solutions</span>
+                        </div>
+                        <p class="timeline-text">Leading the architectural design of offline-first mobile applications using React Native. Optimizing native bridge performance and mentoring junior developers.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">2021 — 2023</span>
+                            <h3>Senior App Developer</h3>
+                            <span class="timeline-company">Vortex Studios</span>
+                        </div>
+                        <p class="timeline-text">Engineered high-performance cross-platform applications using Flutter. Integrated real-time synchronization services and streamlined CI/CD publishing workflows.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">2019 — 2021</span>
+                            <h3>Full Stack Developer</h3>
+                            <span class="timeline-company">PixelForge Co.</span>
+                        </div>
+                        <p class="timeline-text">Developed robust RESTful and GraphQL APIs using Node.js and PostgreSQL. Designed highly interactive administration panels using React.js and Redux.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Asymmetric Grid) -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Selected Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid-asymmetric">
+                    <!-- Project 1: Featured (Landscape Layout) -->
+                    <div class="project-card project-card-featured">
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="assets/project1.png" alt="Finance Tracker App">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <span class="project-badge">Featured App</span>
+                                    <h3>Finance Tracker</h3>
+                                </div>
+                                <p>A comprehensive mobile application for personal finance management, engineered with
+                                    real-time analytics dashboards, localized offline storage, and predictive budgeting
+                                    scripts.</p>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>Redux</span>
+                                    <span>Chart.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Demo <span class="link-arrow">→</span></a>
+                                    <a href="#" class="project-link">GitHub <span class="link-arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Portrait Layout -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="assets/project2.png" alt="Task Manager App">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <span class="project-badge">Productivity</span>
+                                    <h3>Task Manager</h3>
+                                </div>
+                                <p>A fluid task coordination workspace designed with drag-and-drop kanban boards, active
+                                    collaboration spaces, and custom local database syncing.</p>
+                                <div class="project-tags">
+                                    <span>Flutter</span>
+                                    <span>BLoC Pattern</span>
+                                    <span>Firebase</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Demo <span class="link-arrow">→</span></a>
+                                    <a href="#" class="project-link">GitHub <span class="link-arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Portrait Layout -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="assets/project3.png" alt="Weather App">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <span class="project-badge">Utility</span>
+                                    <h3>Weather Forecast</h3>
+                                </div>
+                                <p>A lightweight forecasting utility showcasing real-time coordinate lookup, custom
+                                    weather graphs, and visual map layers API integration.</p>
+                                <div class="project-tags">
+                                    <span>Vue.js</span>
+                                    <span>Mapbox</span>
+                                    <span>REST API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Demo <span class="link-arrow">→</span></a>
+                                    <a href="#" class="project-link">GitHub <span class="link-arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Featured (Landscape Layout) -->
+                    <div class="project-card project-card-featured">
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="assets/project4.png" alt="Social Link Networking App">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <span class="project-badge">Featured App</span>
+                                    <h3>Social Link</h3>
+                                </div>
+                                <p>A modern social networking concept featuring real-time interactive feeds, custom profile cards, fluid animations, and a secure instant messaging interface built for high-performance scale.</p>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>WebSockets</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Demo <span class="link-arrow">→</span></a>
+                                    <a href="#" class="project-link">GitHub <span class="link-arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Expertise</span>
+                    <h2 class="section-title">Technical Matrix</h2>
+                </div>
+
+                <div class="skills-matrix-grid">
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="category-icon">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <h3>Mobile Systems</h3>
+                        </div>
+                        <ul class="skills-tag-list">
+                            <li>React Native</li>
+                            <li>Flutter</li>
+                            <li>iOS/Android</li>
+                            <li>Kotlin</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="category-icon">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3>Web Tech</h3>
+                        </div>
+                        <ul class="skills-tag-list">
+                            <li>TypeScript</li>
+                            <li>React.js</li>
+                            <li>Vue.js</li>
+                            <li>HTML5 / CSS3</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="category-icon">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <h3>Backend Core</h3>
+                        </div>
+                        <ul class="skills-tag-list">
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="category-icon">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                                </svg>
+                            </div>
+                            <h3>Tooling</h3>
+                        </div>
+                        <ul class="skills-tag-list">
+                            <li>Git / GitHub</li>
+                            <li>Docker</li>
+                            <li>Vite</li>
+                            <li>CI/CD Workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Connect</span>
+                    <h2 class="section-title">Start a Project</h2>
+                </div>
+
+                <div class="contact-split-grid">
+                    <!-- Left Side Details -->
+                    <div class="contact-details-panel">
+                        <h3>Let's Collaborate</h3>
+                        <p>I am currently open to full-time engineering roles, consulting engagements, or project-based
+                            opportunities. Get in touch, and let's craft something clean.</p>
+
+                        <div class="contact-meta-cards">
+                            <div class="meta-card">
+                                <div class="meta-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="meta-card-text">
+                                    <span class="meta-label">Email</span>
+                                    <span class="meta-value">padernillakurtcyril@isufst.edu.ph</span>
+                                </div>
+                            </div>
+
+                            <div class="meta-card">
+                                <div class="meta-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z">
+                                        </path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="meta-card-text">
+                                    <span class="meta-label">Location</span>
+                                    <span class="meta-value">Brgy. Dacal San Enrique, Iloilo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-strip">
+                            <a href="#" class="social-icon-link" aria-label="GitHub">GitHub</a>
+                            <a href="#" class="social-icon-link" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="#" class="social-icon-link" aria-label="Twitter">Twitter</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Form -->
+                    <div class="contact-form-panel">
+                        <form class="redesigned-contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-field-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Name" required
+                                        autocomplete="name">
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Email Address" required
+                                        autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="form-field-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Let's build..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit-btn">
+                                Send Message
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Kurt Cyril Padernilla. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
